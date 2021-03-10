@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="Uwkc4u" name="Amoeba_Violin_DynFr" projectType="guiapp" displaySplashScreen="1"
+              jucerFormatVersion="1">
+  <MAINGROUP id="TKgg3D" name="Amoeba_Violin_DynFr">
+    <GROUP id="{2CCF1E1F-AD6B-22E6-33AF-3AF3C55ECA3B}" name="SenselWrapper">
+      <GROUP id="{5553DEAE-BD58-5A9B-7584-47349460CC53}" name="lib">
+        <FILE id="qqnNjS" name="sensel.c" compile="1" resource="0" file="SenselWrapper/lib/sensel.c"/>
+        <FILE id="DXyfse" name="sensel.h" compile="0" resource="0" file="SenselWrapper/lib/sensel.h"/>
+        <FILE id="gTLvLp" name="sensel_decompress.h" compile="0" resource="0"
+              file="SenselWrapper/lib/sensel_decompress.h"/>
+        <FILE id="Z0oFAx" name="sensel_device.h" compile="0" resource="0" file="SenselWrapper/lib/sensel_device.h"/>
+        <FILE id="oCDLJs" name="sensel_protocol.h" compile="0" resource="0"
+              file="SenselWrapper/lib/sensel_protocol.h"/>
+        <FILE id="dZJUcX" name="sensel_types.h" compile="0" resource="0" file="SenselWrapper/lib/sensel_types.h"/>
+      </GROUP>
+      <FILE id="nEugOj" name="SenselWrapper.h" compile="0" resource="0" file="SenselWrapper/SenselWrapper.h"/>
+    </GROUP>
+    <GROUP id="{95766283-2668-CB3F-37A1-40A0E013B8B4}" name="Source">
+      <FILE id="oFmnUf" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="PnY4dZ" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="fFWrG7" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019" externalLibraries="C:\Program Files\Sensel\SenselLib\x64\LibSensel.lib">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Amoeba_Violin_DynFr"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Amoeba_Violin_DynFr"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Amoeba_Violin_DynFr"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Amoeba_Violin_DynFr"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
